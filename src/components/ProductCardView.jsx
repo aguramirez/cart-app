@@ -3,8 +3,8 @@ import React from 'react'
 
 export const ProductCardView = ({id, name, description, price}) => {
 
-    const onAddProduct = () => {
-
+    const onAddProduct = (product) => {
+        console.log(product);
     } 
     return (
         <>
