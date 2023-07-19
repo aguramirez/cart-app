@@ -1,10 +1,11 @@
 
 import React from 'react'
 
-export const ProductCardView = ({id, name, description, price}) => {
+export const ProductCardView = ({handler, id, name, description, price}) => {
 
     const onAddProduct = (product) => {
         console.log(product);
+        handler(product);
     } 
     return (
         <>
